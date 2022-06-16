@@ -1,0 +1,199 @@
+#conteudo {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F5F6;
+    padding-top: 2rem;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 90%;
+    color: #208C6B;
+    font-weight: bold;
+}
+
+#header > li {
+    padding: 1rem;
+    width: 22%;
+}
+
+#header > #headerClienteImagem {
+    text-align: center;
+    padding: 1rem;
+    width: 10%;
+}
+
+#header > #headerClienteAcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowCliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 90%;
+    border: 1px solid #208C6B;
+    border-radius: 0.5rem;
+}
+
+.rowCliente > li {
+    padding: 1rem;
+    width: 22%;
+}
+
+.rowCliente > .rowClienteImagem {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowClienteImagem > .imgClienteImagem {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 1px solid #E5E5E5;
+}
+
+.rowClienteAcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowCliente a {
+    text-decoration: none;
+    color: #208C6B;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.rowCliente a:hover {
+    transition-duration: 500ms;
+    background-color: #04996b;
+    color: #FFF;
+}
+
+.row-cliente-mobile {
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 50%;
+    border: 1px solid #208C6B;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.row-cliente-mobile span {
+    color: #208C6B;
+    font-weight: bold;
+}
+
+.row-cliente-mobile-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.row-cliente-mobile a {
+    display: inline-block;
+    text-decoration: none;
+    background: #208C6B;
+    font-weight: bold;
+    padding: .8rem 1rem;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.row-cliente-mobile a:hover {
+    transition-duration: 500ms;
+    background-color: #04996b;
+}
+
+@media(max-width: 980px) {
+    .row-cliente-mobile {
+        display: flex;
+    }
+
+    #header, .rowCliente{
+        display: none;
+    }
+}
+
+
+/* Modal */
+#modal-telefone {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal-container {
+    width: 320px;
+    height: 120px;
+    background: #FFF;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 1rem;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #208c6b;
+    color: #fff;
+    border: 2px solid #283241;
+    box-shadow: rgba(0, 0, 0, 0.208);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.title {
+    margin: 1rem;
+}
+
+.active#modal-telefone {
+    display: flex;
+}
+
+.conteudoModal {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalItemTelefone {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.conteudoModal {
+    text-align: center;
+}

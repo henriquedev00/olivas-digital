@@ -1,0 +1,30 @@
+header {
+    background: #283241;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    margin-right: 1rem;
+}
+
+header ul a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+
+header ul a:hover {
+    color: #208C6B;
+}

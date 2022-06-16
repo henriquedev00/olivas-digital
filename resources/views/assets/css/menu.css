@@ -1,0 +1,25 @@
+menu {
+    background-color: #F6F5F6;
+    /* padding: 1rem 2rem; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+menu a {
+    color: #208C6B;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 0.75rem;
+    text-decoration: none;
+    border: 1px solid #208C6B;
+    border-radius: 0.5rem;
+}
+
+menu a:hover {
+    transition-duration: 500ms;
+    background-color: #04996b;
+    color: #FFF;
+}
